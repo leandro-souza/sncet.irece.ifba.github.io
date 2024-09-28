@@ -3,100 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\programacao\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\programacao\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\pc-cientifico\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:committees\\pc-cientifico\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\organization\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:committees\\organization\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:committees\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\important-dates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:important-dates\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\show-talentos\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:call-for-papers\\show-talentos\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\workshops\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:call-for-papers\\workshops\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\CITGC_2021\\committees\\pc-cientifico\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CITGC_2021\\committees\\pc-cientifico\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\OneDrive\\Documents\\GitHub\\scet_ifba_irece\\committees\\organization\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\voluntarios\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\voluntarios\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\sobre-evento\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\sobre-evento\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\mesas\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\mesas\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\message\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\message\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\mesas\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\mesas\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\palestrantes\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\palestrantes\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\inscricoes\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\inscricoes\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:call-for-papers\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Downloads\\52524\\site\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\culturais\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\culturais\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sponsors\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\contatos\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\contatos\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\pc-cientifico\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:committees\\pc-cientifico\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sponsors\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\sponsorship-opportunities\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sponsors\\sponsorship-opportunities\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Downloads\\52524\\site\\css\\fonts.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\voluntarios\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:attending\\voluntarios\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Downloads\\52524\\site\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\journal-first\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:call-for-papers\\journal-first\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:call-for-papers\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,315 +46,124 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\index.html",
               "RelativeDocumentMoniker": "call-for-papers\\index.html",
               "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\index.html",
               "RelativeToolTip": "call-for-papers\\index.html",
-              "ViewState": "AQIAAOMBAAAAAAAAAAAAAPsBAAAiAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAApwCMAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T00:53:04.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\inscricoes\\index.html",
-              "RelativeDocumentMoniker": "attending\\inscricoes\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\inscricoes\\index.html",
-              "RelativeToolTip": "attending\\inscricoes\\index.html",
-              "ViewState": "AQIAAKMBAAAAAAAAAAAAALgBAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T02:43:31.91Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\palestrantes\\index.html",
-              "RelativeDocumentMoniker": "attending\\palestrantes\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\palestrantes\\index.html",
-              "RelativeToolTip": "attending\\palestrantes\\index.html",
-              "ViewState": "AQIAAPEBAAAAAAAAAAAqwAkCAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T18:24:04.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\mesas\\index.html",
-              "RelativeDocumentMoniker": "attending\\mesas\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\mesas\\index.html",
-              "RelativeToolTip": "attending\\mesas\\index.html",
-              "ViewState": "AQIAACMBAAAAAAAAAAAmwGADAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T18:31:17.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\message\\index.html",
-              "RelativeDocumentMoniker": "attending\\message\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\message\\index.html",
-              "RelativeToolTip": "attending\\message\\index.html",
-              "ViewState": "AQIAAI8BAAAAAAAAAAAAAKUBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T02:25:52.832Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\organization\\index.html",
-              "RelativeDocumentMoniker": "committees\\organization\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\organization\\index.html",
-              "RelativeToolTip": "committees\\organization\\index.html",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAABwAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-22T20:14:44.357Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\OneDrive\\Documents\\GitHub\\scet_ifba_irece\\committees\\organization\\index.html",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\OneDrive\\Documents\\GitHub\\scet_ifba_irece\\committees\\organization\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\OneDrive\\Documents\\GitHub\\scet_ifba_irece\\committees\\organization\\index.html",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\OneDrive\\Documents\\GitHub\\scet_ifba_irece\\committees\\organization\\index.html",
-              "ViewState": "AQIAALECAAAAAAAAAAAMwNkCAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-26T14:31:49.322Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\culturais\\index.html",
-              "RelativeDocumentMoniker": "attending\\culturais\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\culturais\\index.html",
-              "RelativeToolTip": "attending\\culturais\\index.html",
-              "ViewState": "AQIAABACAAAAAAAAAAAmwCUCAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T18:40:02.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\important-dates\\index.html",
-              "RelativeDocumentMoniker": "important-dates\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\important-dates\\index.html",
-              "RelativeToolTip": "important-dates\\index.html",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABsAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-22T18:21:25.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AQIAAIMCAAAAAAAAAAAQwI4CAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-07-20T21:55:03.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\index.html",
-              "RelativeDocumentMoniker": "committees\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\index.html",
-              "RelativeToolTip": "committees\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T00:37:51.689Z",
+              "WhenOpened": "2024-09-03T00:42:43.646Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\CITGC_2021\\committees\\pc-cientifico\\index.html",
-              "RelativeDocumentMoniker": "CITGC_2021\\committees\\pc-cientifico\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\CITGC_2021\\committees\\pc-cientifico\\index.html",
-              "RelativeToolTip": "CITGC_2021\\committees\\pc-cientifico\\index.html",
-              "ViewState": "AQIAANoDAAAAAAAAAAAAAOoDAAAnAAAA",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\voluntarios\\index.html",
+              "RelativeDocumentMoniker": "attending\\voluntarios\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\voluntarios\\index.html",
+              "RelativeToolTip": "attending\\voluntarios\\index.html",
+              "ViewState": "AQIAABoAAAAAAAAAAAApwDAAAADEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-22T20:21:24.195Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\show-talentos\\index.html",
-              "RelativeDocumentMoniker": "call-for-papers\\show-talentos\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\show-talentos\\index.html",
-              "RelativeToolTip": "call-for-papers\\show-talentos\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T01:32:01.493Z",
+              "WhenOpened": "2024-09-03T00:41:37.919Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\workshops\\index.html",
-              "RelativeDocumentMoniker": "call-for-papers\\workshops\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\workshops\\index.html",
-              "RelativeToolTip": "call-for-papers\\workshops\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABGAAAA",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\sponsorship-opportunities\\index.html",
+              "RelativeDocumentMoniker": "sponsors\\sponsorship-opportunities\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\sponsorship-opportunities\\index.html",
+              "RelativeToolTip": "sponsors\\sponsorship-opportunities\\index.html",
+              "ViewState": "AQIAABsAAAAAAAAAAAApwDEAAADEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T03:25:44.152Z",
+              "WhenOpened": "2024-09-03T00:40:39.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\index.html",
+              "RelativeDocumentMoniker": "sponsors\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\index.html",
+              "RelativeToolTip": "sponsors\\index.html",
+              "ViewState": "AQIAAJIBAAAAAAAAAAApwLYBAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T00:39:27.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\pc-cientifico\\index.html",
+              "RelativeDocumentMoniker": "committees\\pc-cientifico\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\pc-cientifico\\index.html",
+              "RelativeToolTip": "committees\\pc-cientifico\\index.html",
+              "ViewState": "AQIAABYAAAAAAAAAAAApwCwAAADEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T00:38:50.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\contatos\\index.html",
+              "RelativeDocumentMoniker": "attending\\contatos\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\contatos\\index.html",
+              "RelativeToolTip": "attending\\contatos\\index.html",
+              "ViewState": "AQIAAB0AAAAAAAAAAAApwDMAAADEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T00:38:13.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\palestrantes\\index.html",
+              "RelativeDocumentMoniker": "attending\\palestrantes\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\palestrantes\\index.html",
+              "RelativeToolTip": "attending\\palestrantes\\index.html",
+              "ViewState": "AQIAABQAAAAAAAAAAAApwCoAAADtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-09-03T00:37:24.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\pc-cientifico\\index.html",
-              "RelativeDocumentMoniker": "committees\\pc-cientifico\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\committees\\pc-cientifico\\index.html",
-              "RelativeToolTip": "committees\\pc-cientifico\\index.html",
-              "ViewState": "AQIAAOYBAAAAAAAAAAAjwAwCAABLAAAA",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\message\\index.html",
+              "RelativeDocumentMoniker": "attending\\message\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\message\\index.html",
+              "RelativeToolTip": "attending\\message\\index.html",
+              "ViewState": "AQIAAIMBAAAAAAAAAAApwJgBAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T02:56:24.876Z",
+              "WhenOpened": "2024-09-03T00:37:10.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\programacao\\index.html",
-              "RelativeDocumentMoniker": "attending\\programacao\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\programacao\\index.html",
-              "RelativeToolTip": "attending\\programacao\\index.html",
-              "ViewState": "AQIAALEAAAAAAAAAAAAAAL4AAAA3AAAA",
+              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\mesas\\index.html",
+              "RelativeDocumentMoniker": "attending\\mesas\\index.html",
+              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\mesas\\index.html",
+              "RelativeToolTip": "attending\\mesas\\index.html",
+              "ViewState": "AQIAACQDAAAAAAAAAAApwCwDAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T14:49:39.572Z",
+              "WhenOpened": "2024-09-03T00:36:54.291Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Downloads\\52524\\site\\index.html",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\52524\\site\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Downloads\\52524\\site\\index.html",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Downloads\\52524\\site\\index.html",
-              "ViewState": "AQIAABwBAAAAAAAAAAAAwGIBAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-24T22:45:22.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\voluntarios\\index.html",
-              "RelativeDocumentMoniker": "attending\\voluntarios\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\voluntarios\\index.html",
-              "RelativeToolTip": "attending\\voluntarios\\index.html",
-              "ViewState": "AQIAAJ8BAAAAAAAAAAAAAKgBAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T18:44:29.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\sobre-evento\\index.html",
-              "RelativeDocumentMoniker": "attending\\sobre-evento\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\sobre-evento\\index.html",
-              "RelativeToolTip": "attending\\sobre-evento\\index.html",
-              "ViewState": "AQIAANQBAAAAAAAAAAAMwOkBAABAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-12T02:29:45.087Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\index.html",
-              "RelativeDocumentMoniker": "sponsors\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\index.html",
-              "RelativeToolTip": "sponsors\\index.html",
-              "ViewState": "AQIAALkBAAAAAAAAAAAAANoBAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T03:19:51.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\contatos\\index.html",
-              "RelativeDocumentMoniker": "attending\\contatos\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\attending\\contatos\\index.html",
-              "RelativeToolTip": "attending\\contatos\\index.html",
-              "ViewState": "AQIAAJYBAAAAAAAAAAAAALgBAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T02:27:53.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\sponsorship-opportunities\\index.html",
-              "RelativeDocumentMoniker": "sponsors\\sponsorship-opportunities\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\sponsors\\sponsorship-opportunities\\index.html",
-              "RelativeToolTip": "sponsors\\sponsorship-opportunities\\index.html",
-              "ViewState": "AQIAALcCAAAAAAAAAAAmwNsCAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-22T18:14:46.762Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "fonts.css",
-              "DocumentMoniker": "C:\\Users\\leoun\\Downloads\\52524\\site\\css\\fonts.css",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\52524\\site\\css\\fonts.css",
-              "ToolTip": "C:\\Users\\leoun\\Downloads\\52524\\site\\css\\fonts.css",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Downloads\\52524\\site\\css\\fonts.css",
-              "ViewState": "AQIAAP8KAAAAAAAAAAAjwPYLAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-24T23:45:01.516Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "about.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Downloads\\52524\\site\\about.html",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Downloads\\52524\\site\\about.html",
-              "ToolTip": "C:\\Users\\leoun\\Downloads\\52524\\site\\about.html",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Downloads\\52524\\site\\about.html",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAAwLQAAABsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-24T23:13:41.401Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\journal-first\\index.html",
-              "RelativeDocumentMoniker": "call-for-papers\\journal-first\\index.html",
-              "ToolTip": "C:\\Users\\leoun\\Dropbox\\IFBA\\COORD. PESQUISA 2024\\SNC\u0026T 2024\\SITE\\SCT_2024\\call-for-papers\\journal-first\\index.html",
-              "RelativeToolTip": "call-for-papers\\journal-first\\index.html",
-              "ViewState": "AQIAALoAAAAAAAAAAAAmwNEAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-08-23T01:14:11.247Z"
             }
           ]
         }

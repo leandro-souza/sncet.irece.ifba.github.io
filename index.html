@@ -92,6 +92,48 @@
         .gallery-grid, .gallery-masonry {
             margin: -10px
         }
+
+        /* Estilos para o pop-up */
+        .popup {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        /* Estilos para o fundo escurecido */
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        /* Estilos para o botão de fechar */
+        .close-btn {
+            background-color: #2d6815;
+            color: white;
+            border: none;
+            padding: 5px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Tornar o pop-up invisível até ser chamado */
+        .popup, .popup-overlay {
+            display: none;
+        }
     </style>
     <link rel='stylesheet' id='onepress-gallery-lightgallery-css'
           href='wp-content/themes/onepress/assets/css/lightgallery69596959.css?ver=4.9.3' type='text/css' media='all'/>
@@ -146,6 +188,63 @@
 </head>
 
 <body class="home page-template page-template-template-frontpage page-template-template-frontpage-php page page-id-2">
+
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popup">
+        <h3>Atenção!</h3>
+        <p>
+            Algumas datas foram alteradas! <br>
+            Para mais detalhes, confira na página <a href="important-dates/index.html">Datas Importantes</a> .
+        </p>
+        <button class="close-btn" onclick="closePopup()">Fechar</button>
+    </div>
+
+    <script>
+       // Função para abrir o pop-up
+        function openPopup() {
+            document.getElementById('popup').style.display = 'block';
+            document.getElementById('popupOverlay').style.display = 'block';
+        }
+
+        // Função para fechar o pop-up e salvar o tempo de fechamento
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+            document.getElementById('popupOverlay').style.display = 'none';
+
+            // Salva a hora do fechamento no localStorage
+            const now = new Date().getTime();
+            localStorage.setItem('popupClosedTime', now);
+        }
+
+        // Função para verificar se o pop-up deve aparecer
+        function shouldShowPopup() {
+            const popupClosedTime = localStorage.getItem('popupClosedTime');
+
+            // Se não houve fechamento anterior, mostrar o pop-up
+            if (!popupClosedTime) {
+                return true;
+            }
+
+            // Calcula o tempo desde o fechamento em milissegundos
+            const now = new Date().getTime();
+            const timePassed = now - popupClosedTime;
+
+            // Verifica se já se passaram 4 minutos (240000 ms)
+            if (timePassed > 240000) {
+                return true;
+            }
+
+            return false;
+        }
+
+        // Mostrar o pop-up apenas se for a primeira vez ou após 4 minutos
+        window.onload = function() {
+            if (shouldShowPopup()) {
+                openPopup();
+            }
+        }
+    </script>
+
     <div id="page" class="hfeed site">
         <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
         <div id="header-section" class="h-on-top no-transparent">
@@ -176,8 +275,8 @@
                                             <a href="attending/sobre-evento/index.html">Sobre o Evento</a>
                                         </li>
                                         <!--<li id="menu-item-37"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
-                                    <a href="attending/social-events/index.html">Social Events</a></li>-->
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
+                                        <a href="attending/social-events/index.html">Social Events</a></li>-->
                                         <li id="menu-item-37"
                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37">
                                             <a href="attending/inscricoes/index.html">Inscrições</a>
@@ -199,13 +298,13 @@
                                             <a href="attending/culturais/index.html">Atrações Culturais</a>
                                         </li>
                                         <!--<li id="menu-item-88"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page mesnu-item-88">
-                                        <a href="attending/visa-information/index.html">Visa Information</a>
-                                    </li>
-                                        <li id="menu-item-64"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64">
-                                            <a href="attending/voluntarios/index.html">Voluntários</a>
-                                        </li>-->
+                                            class="menu-item menu-item-type-post_type menu-item-object-page mesnu-item-88">
+                                            <a href="attending/visa-information/index.html">Visa Information</a>
+                                        </li>
+                                            <li id="menu-item-64"
+                                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64">
+                                                <a href="attending/voluntarios/index.html">Voluntários</a>
+                                            </li>-->
                                         <li id="menu-item-88"
                                             class="menu-item menu-item-type-post_type menu-item-object-page mesnu-item-88">
                                             <a href="attending/message/index.html">SNCT Virtual</a>
@@ -229,19 +328,19 @@
                                             <a href="committees/pc-cientifico/index.html">Comitê Científico</a>
                                         </li>
                                         <!-- <li id="menu-item-455"
-                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455">
-                                         <a href="committees/pc-new-ideas/index.html">Comitê de Programa - Inscrições</a>
-                                     </li>
-                                     <li id="menu-item-454"
-                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454">
-                                         <a href="committees/pc-architecture/index.html">Comitê de Programa - Minicursos</a></li>
-                                     <li id="menu-item-458"
-                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454">
-                                         <a href="committees/pc-tool/index.html">Comitê de Programa - Comunicação</a></li>
-                                    <!--< <li id="menu-item-453"
-                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453">
-                                         <a href="committees/pc-early-career/index.html">Program Committee – Early
-                                             Career</a></li> -->
+                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-455">
+                                             <a href="committees/pc-new-ideas/index.html">Comitê de Programa - Inscrições</a>
+                                         </li>
+                                         <li id="menu-item-454"
+                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454">
+                                             <a href="committees/pc-architecture/index.html">Comitê de Programa - Minicursos</a></li>
+                                         <li id="menu-item-458"
+                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-454">
+                                             <a href="committees/pc-tool/index.html">Comitê de Programa - Comunicação</a></li>
+                                        <!--< <li id="menu-item-453"
+                                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-453">
+                                             <a href="committees/pc-early-career/index.html">Program Committee – Early
+                                                 Career</a></li> -->
                                     </ul>
                                 </li>
                                 <li id="menu-item-87"
@@ -250,59 +349,21 @@
                                 </li>
                                 <li id="menu-item-54"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-54">
-                                    <a href="call-for-papers/index.html">Chamada de Trabalhos</a>
+                                    <a href="chamada-trabalhos/index.html">Chamada de Trabalhos</a>
                                     <ul class="sub-menu">
                                         <li id="menu-item-99"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99">
-                                            <a href="call-for-papers/journal-first/index.html">Submissão de Trabalhos</a>
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-99">
+                                            <a href="chamada-trabalhos/apresentacao-oral-poster/index.html">Apresentação Oral e Pôster</a>
                                         </li>
-                                        <!-- <li id="menu-item-99"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a
-                                            href="call-for-papers/journal-first/index.html">Artigos Aceitos</a>
-                                    </li>
-                                    <li id="menu-item-99"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99">
-                                        <a
-                                                href="call-for-papers/technical-papers/index.html">Painéis</a>
-                                    </li>-->
-                                        <!--<li id="menu-item-95"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-95">
-                                    <a
-                                            href="call-for-papers/new-and-emerging-ideas/index.html">Novas idéias</a></li>-->
-                                        <!-- <li id="menu-item-94"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94">
-                                        <a
-                                                href="call-for-papers/software-architecture-in-practice-papers/index.html">Software
-                                            Architecture in Practice Track</a></li>
-                                    <li id="menu-item-98"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94">
-                                        <a
-                                                href="call-for-papers/tool-demonstrations-papers/index.html">Tool
-                                            Demonstrations Track</a></li>
-                                    <li id="menu-item-247"
-                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-247">
-                                        <a href="call-for-papers/early-career-forum/index.html">Early Career
-                                            Researchers
-                                            Forum</a></li>-->
-                                        <!-- <li id="menu-item-358"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-358">
-                                    <a href="call-for-papers/workshops/index.html">Workshops</a>-->
-                                        <!--<ul class="sub-menu">
-                                        <li id="menu-item-97"
-                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
-                                            <a href="call-for-papers/workshop-proposals/index.html">Workshop
-                                                Proposals</a></li>
-                                    </ul>-->
+                                        <li id="menu-item-95"
+                                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-95">
+                                            <a href="chamada-trabalhos/projeto-didatico/index.html">Projeto/experimento Didático</a>
+                                        </li>
                                 </li>
-
-                                <!--<li id="menu-item-96"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96">
-                                <a
-                                        href="call-for-papers/tutorials/index.html">Tutoriais</a></li>-->
-                            <li id="menu-item-234"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234">
-                                <a href="attending/voluntarios/index.html">Estudante Volutário</a>
-                            </li>
+                                <li id="menu-item-234"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-234">
+                                    <a href="attending/voluntarios/index.html">Estudante Voluntário</a>
+                                </li>
                                 <li id="menu-item-510"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-510">
                                     <a href="call-for-papers/show-talentos/index.html">Show de Talentos</a>
@@ -313,27 +374,27 @@
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-358">
                                 <a href="call-for-papers/workshops/index.html">Chamadas de Minicursos</a>
                                 <!--<ul class="sub-menu">
-                                <li id="menu-item-97"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
-                                    <a href="call-for-papers/workshop-proposals/index.html">Workshop
-                                        Proposals</a></li>
-                            </ul>-->
+                                    <li id="menu-item-97"
+                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97">
+                                        <a href="call-for-papers/workshop-proposals/index.html">Workshop
+                                            Proposals</a></li>
+                                </ul>-->
                             </li>
                             <!--<li id="menu-item-100"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100">
-                            <a href="#0">Minicursos</a>
-                            <ul>
-                                <li id="menu-item-101"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
-                                <a href="call-for-papers/review-guidelines/index.html">Mendley</a></li>
-                                <li id="menu-item-101"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
-                                <a href="../../minicursos/index.html">Minicurso 2</a></li>
-                                <li id="menu-item-101"
-                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
-                                <a href="call-for-papers/review-guidelines/index.html"wo>Minicurso 3</a></li>
-                            </ul>
-                        </li>-->
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100">
+                                <a href="#0">Minicursos</a>
+                                <ul>
+                                    <li id="menu-item-101"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
+                                    <a href="call-for-papers/review-guidelines/index.html">Mendley</a></li>
+                                    <li id="menu-item-101"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
+                                    <a href="../../minicursos/index.html">Minicurso 2</a></li>
+                                    <li id="menu-item-101"
+                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101">
+                                    <a href="call-for-papers/review-guidelines/index.html"wo>Minicurso 3</a></li>
+                                </ul>
+                            </li>-->
                             <li id="menu-item-53"
                                 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-53">
                                 <a href="sponsors/index.html">Organização</a>
@@ -345,8 +406,8 @@
                                 </ul>
                             </li>
                             <!-- <li id="menu-item-52"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
-                            href="previous-editions/index.html">Certificados</a></li>-->
+                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
+                                href="previous-editions/index.html">Certificados</a></li>-->
                             </ul>
                         </nav>
                         <!-- #site-navigation -->
@@ -376,6 +437,7 @@
                         <a href="attending/programacao/index.html" class="btn btn-theme-primary btn-lg">Programação</a>
                         <a href="attending/inscricoes/index.html" class="btn btn-warning btn-lg">Inscrições</a>
                         <a href="important-dates/index.html" class="btn btn-success btn-lg">Datas Importantes</a>
+                        <a href="https://drive.google.com/file/d/1aEkxjQ9q19J4NIW-Rll4xD_7bwGzI4nS/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-warning btn-lg">Edital</a>
 
                         <!--<a href="attending/accommodation/index.html" class="btn btn-secondary btn-lg">Accommodation</a>-->
                     </div>
@@ -402,7 +464,7 @@
                                 <img src="images/2.jpg" alt="" width="370" height="198" />
                             </div>
                             <div class="block-320 text-center">
-                             <!---    <h4 class="font-weight-bold">Palestras e Mesas-redondas</h4>-->
+                                <!---    <h4 class="font-weight-bold">Palestras e Mesas-redondas</h4>-->
                                 <hr class="offset-top-40" />
 
                             </div>
@@ -412,7 +474,7 @@
                                 <img src="images/3.jpg" alt="" width="370" height="198" />
                             </div>
                             <div class="block-320 text-center">
-                            <!---     <h4 class="font-weight-bold">Minicursos e Oficinas</h4>-->
+                                <!---     <h4 class="font-weight-bold">Minicursos e Oficinas</h4>-->
                                 <hr class="offset-top-40" />
 
                             </div>
@@ -425,7 +487,7 @@
 
                             </div>
                             <div class="block-320 text-center">
-                            <!---     <h4 class="font-weight-bold">Painéis Temáticos</h4>-->
+                                <!---     <h4 class="font-weight-bold">Painéis Temáticos</h4>-->
                                 <hr class="offset-top-40" />
 
                             </div>
@@ -436,7 +498,7 @@
                                 <img src="images/5.jpg" alt="" width="370" height="198" />
                             </div>
                             <div class="block-320 text-center">
-                               <!--- <h4 class="font-weight-bold">Ciência na Praça</h4>-->
+                                <!--- <h4 class="font-weight-bold">Ciência na Praça</h4>-->
                                 <hr class="offset-top-40" />
 
                             </div>
@@ -454,53 +516,53 @@
                                 <hr class="offset-top-40" />
 
                             </div>
-                    </div>
-                    <div class="team-classic-wrap">
-                        <div class="team-classic-img">
-                            <img src="images/7.jpg" alt="" width="370" height="198" />
                         </div>
-                        <div class="block-320 text-center">
-                           <!-- <h4 class="font-weight-bold">Apresentações de Trabalhos </h4>-->
-                            <hr class="offset-top-40" />
+                        <div class="team-classic-wrap">
+                            <div class="team-classic-img">
+                                <img src="images/7.jpg" alt="" width="370" height="198" />
+                            </div>
+                            <div class="block-320 text-center">
+                                <!-- <h4 class="font-weight-bold">Apresentações de Trabalhos </h4>-->
+                                <hr class="offset-top-40" />
 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--About-->
-                                <section id="welcome" class="section-features section-padding section-meta onepage-section">
-                                    <div class="container">
-                                        <div class="row row-30">
-                                            <div class="col-lg-6">
-                                                <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s">
-                                                    <img src="images/abou_tema.jpg" alt="" width="650" height="570" />
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6 col-12">
-                                                <div class="block-sm offset-top-45">
-                                                    <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s">SNC&T <span class="text-primary"> 2024</span></h3>
-                                                    <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" align="justify">
-                                                        A 14ª Semana Nacional de Ciência, Tecnologia e Inovação (SNCT) do IFBA - Campus Irecê é um evento anual realizado pelo Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA-Irecê) com o objetivo de promover e incentivar a troca de experiências entre pesquisadores, profissionais da indústria e academia sobre as mais recentes pesquisas, tendências e inovações práticas e teóricas nas áreas de ciência, tecnologia e inovação.
-                                                    </p>
-                                                    <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" align="justify">
-                                                        Esta edição em especial tem como tema <strong>
-                                                            "Biomas do Brasil: Diversidade, Saberes e Tecnologias Sociais"
-                                                        </strong>, e busca debater com especialistas, pesquisadores, empresas e profissionais do Território de Irecê, do Brasil e do Mundo, a integração dos conhecimentos tradicionais com inovações tecnológicas para promover práticas sustentáveis e o desenvolvimento socioeconômico da região. O evento será realizado em formato híbrido, combinando atividades presenciais e online para maximizar o alcance e a participação da comunidade interna e externa.
-                                                    </p>
-                                                    <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" align="justify">
-                                                        Esta edição em especial contará com a participação de várias instituições de ensino, pesquisa e inovação do território de Irecê, como UNEB, IF Baiano, CETEP, Sec. Educação de Irecê entre outros,
-                                                    </p>
-                                                    <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">Monte a sua caravana e venha prestigiar o principal evento de ciência e tecnologia do território de Irecê.</p><a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="attending/contatos/index.html">Contatos</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
+        <!--About-->
+        <section id="welcome" class="section-features section-padding section-meta onepage-section">
+            <div class="container">
+                <div class="row row-30">
+                    <div class="col-lg-6">
+                        <div class="block-decorate-img wow fadeInLeft" data-wow-delay=".2s">
+                            <img src="images/abou_tema.jpg" alt="" width="650" height="570" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="block-sm offset-top-45">
+                            <h3 class="wow fadeInLeft text-capitalize devider-bottom" data-wow-delay=".3s">SNC&T <span class="text-primary"> 2024</span></h3>
+                            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" align="justify">
+                                A 14ª Semana Nacional de Ciência, Tecnologia e Inovação (SNCT) do IFBA - Campus Irecê é um evento anual realizado pelo Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA-Irecê) com o objetivo de promover e incentivar a troca de experiências entre pesquisadores, profissionais da indústria e academia sobre as mais recentes pesquisas, tendências e inovações práticas e teóricas nas áreas de ciência, tecnologia e inovação.
+                            </p>
+                            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" align="justify">
+                                Esta edição em especial tem como tema <strong>
+                                    "Biomas do Brasil: Diversidade, Saberes e Tecnologias Sociais"
+                                </strong>, e busca debater com especialistas, pesquisadores, empresas e profissionais do Território de Irecê, do Brasil e do Mundo, a integração dos conhecimentos tradicionais com inovações tecnológicas para promover práticas sustentáveis e o desenvolvimento socioeconômico da região. O evento será realizado em formato híbrido, combinando atividades presenciais e online para maximizar o alcance e a participação da comunidade interna e externa.
+                            </p>
+                            <p class="offset-xl-40 wow fadeInUp" data-wow-delay=".4s" align="justify">
+                                Esta edição em especial contará com a participação de várias instituições de ensino, pesquisa e inovação do território de Irecê, como UNEB, IF Baiano, CETEP, Sec. Educação de Irecê entre outros,
+                            </p>
+                            <p class="default-letter-spacing font-weight-bold text-gray-dark wow fadeInUp" data-wow-delay=".4s">Monte a sua caravana e venha prestigiar o principal evento de ciência e tecnologia do território de Irecê.</p><a class="button-width-190 button-primary button-circle button-lg button offset-top-30" href="attending/contatos/index.html">Contatos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                <!----   <div id="content" class="site-content">
+        <!----   <div id="content" class="site-content">
         <main id="main" class="site-main" role="main">
         <section id="welcome" class="section-features section-padding section-meta onepage-section">
                 <div class="container">
@@ -517,144 +579,148 @@
                             </p>
 
                             <hr>-->
-                                <!-- <div class="section-desc">
-                         <p align="justify">
-                             A 14ª Semana Nacional de Ciência, Tecnologia e Inovação (SNC&T) do IFBA - Campus Irecê é um evento anual realizado pelo Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA-Irecê) com o objetivo de promover e incentivar a troca de experiências entre pesquisadores, profissionais da indústria e academia sobre as mais recentes pesquisas, tendências e inovações práticas e teóricas nas áreas de ciência, tecnologia e inovação.
+        <!-- <div class="section-desc">
+                             <p align="justify">
+                                 A 14ª Semana Nacional de Ciência, Tecnologia e Inovação (SNC&T) do IFBA - Campus Irecê é um evento anual realizado pelo Instituto Federal de Educação, Ciência e Tecnologia da Bahia (IFBA-Irecê) com o objetivo de promover e incentivar a troca de experiências entre pesquisadores, profissionais da indústria e academia sobre as mais recentes pesquisas, tendências e inovações práticas e teóricas nas áreas de ciência, tecnologia e inovação.
 
-                             Esta edição em especial tem como tema <strong>
-                                 "Biomas do Brasil: Diversidade, Saberes e Tecnologias Sociais"
-                             </strong>, e busca debater com especialistas, pesquisadores, empresas e profissionais do Território de Irecê, do Brasil e do Mundo, a integração dos conhecimentos tradicionais com inovações tecnológicas para promover práticas sustentáveis e o desenvolvimento socioeconômico da região. O evento será realizado em formato híbrido, combinando atividades presenciais e online para maximizar o alcance e a participação da comunidade interna e externa.
+                                 Esta edição em especial tem como tema <strong>
+                                     "Biomas do Brasil: Diversidade, Saberes e Tecnologias Sociais"
+                                 </strong>, e busca debater com especialistas, pesquisadores, empresas e profissionais do Território de Irecê, do Brasil e do Mundo, a integração dos conhecimentos tradicionais com inovações tecnológicas para promover práticas sustentáveis e o desenvolvimento socioeconômico da região. O evento será realizado em formato híbrido, combinando atividades presenciais e online para maximizar o alcance e a participação da comunidade interna e externa.
 
-                             <!--<p align = "justify">Tem por missão promover e desenvolver a troca de experiências profissionais, apresentar melhores práticas em Tecnologias e Gestão de Conhecimento e apresentar resultados de pesquisas com foco nos seguintes eixos temáticos: Educação e suas tecnologias, Sociedade da Tecnologia, Educação profissional e tecnológica, Energia e Sustentabilidade, Tecnologia Assistiva e Acessibilidade, Difusão do conhecimento e popularização da ciência.
-                         </p>
-                         <p align = "justify">Entre os principais resultados, espera-se promover a discussão sobre os temas centrais do Congresso e contribuir para a integração entre o meio acadêmico e as comunidades profissionais, ampliando o interesse pela pesquisa, pelo compartilhamento de informação, e sobre as práticas mais inovadoras no campo da Tecnologia e Gestão do Conhecimento.
-                         </p>--
-                         <p align="justify">
-                             Esta edição em especial contará com a participação de várias instituições de ensino, pesquisa e inovação do território de Irecê, como UNEB, IF Baiano, CETEP, Sec. Educação de Irecê entre outros,
-                         </p>
-                     </div>--
+                                 <!--<p align = "justify">Tem por missão promover e desenvolver a troca de experiências profissionais, apresentar melhores práticas em Tecnologias e Gestão de Conhecimento e apresentar resultados de pesquisas com foco nos seguintes eixos temáticos: Educação e suas tecnologias, Sociedade da Tecnologia, Educação profissional e tecnológica, Energia e Sustentabilidade, Tecnologia Assistiva e Acessibilidade, Difusão do conhecimento e popularização da ciência.
+                             </p>
+                             <p align = "justify">Entre os principais resultados, espera-se promover a discussão sobre os temas centrais do Congresso e contribuir para a integração entre o meio acadêmico e as comunidades profissionais, ampliando o interesse pela pesquisa, pelo compartilhamento de informação, e sobre as práticas mais inovadoras no campo da Tecnologia e Gestão do Conhecimento.
+                             </p>--
+                             <p align="justify">
+                                 Esta edição em especial contará com a participação de várias instituições de ensino, pesquisa e inovação do território de Irecê, como UNEB, IF Baiano, CETEP, Sec. Educação de Irecê entre outros,
+                             </p>
+                         </div>--
+                        </div>
+                        <!---- <div class="section-content">
+                        <div class="row">
+                            <div class="feature-item col-lg-6 col-sm-6 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                                <div class="feature-media">
+
+                                </div>
+                                <h4>IFBA Irecê Canal Youtube</h4>
+                                <div><p>As atividades do evento serão transmitidas ao vivo em nosso canal.</p>
+
+                                    &nbsp;
+
+                                    <a href="https://www.youtube.com/c/IFBACampusIrece" target="_blank">
+                                        <span class="fa-stack fa-5x">
+                                        <img class="aligncenter size-full wp-image-845" src="http://icsa-conferences.org/2020/img/logos/youtube.png" alt="live" width="300" height="245">
+                                        </span></a>
+
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="feature-item col-lg-6 col-sm-6 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
+                                <div class="feature-media"> </div>
+                            <div>
+                                <a href="img/logos/logo_scet2.png" target="_blank">
+                                 <a href="index.html" target="_blank">
+                                 <span >
+                                    <img class="aligncenter size-full wp-image-854" src="img/logos/logo_transparente.png" alt="pdf" width="300" height="247"></span></a>
+
+                            </div>
+                            </div>
+
+                            <div class="feature-item col-lg-6 col-sm-6 wow slideInUp">
+                                <div class="feature-media">
+                                </div>
+                                <h4></h4>
+                                <div class="feature-item-content"></div>
+                            </div>
+                        </div>
+                    </div>---
                     </div>
-                    <!---- <div class="section-content">
-                    <div class="row">
-                        <div class="feature-item col-lg-6 col-sm-6 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
-                            <div class="feature-media">
+                    <!--<div style="flex: 1; align-self: center; text-align: center; padding: 20px;">
+                    <a class="twitter-timeline" data-lang="en" data-height="800" data-width="300" href="https://twitter.com/citgcirece">Tweets by ICSAconf</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-                            </div>
-                            <h4>IFBA Irecê Canal Youtube</h4>
-                            <div><p>As atividades do evento serão transmitidas ao vivo em nosso canal.</p>
-
-                                &nbsp;
-
-                                <a href="https://www.youtube.com/c/IFBACampusIrece" target="_blank">
-                                    <span class="fa-stack fa-5x">
-                                    <img class="aligncenter size-full wp-image-845" src="http://icsa-conferences.org/2020/img/logos/youtube.png" alt="live" width="300" height="245">
-                                    </span></a>
-
-                                &nbsp;
-                            </div>
-                        </div>
-                        <div class="feature-item col-lg-6 col-sm-6 wow slideInUp" style="visibility: visible; animation-name: slideInUp;">
-                            <div class="feature-media"> </div>
-                        <div>
-                            <a href="img/logos/logo_scet2.png" target="_blank">
-                             <a href="index.html" target="_blank">
-                             <span >
-                                <img class="aligncenter size-full wp-image-854" src="img/logos/logo_transparente.png" alt="pdf" width="300" height="247"></span></a>
-
-                        </div>
-                        </div>
-
-                        <div class="feature-item col-lg-6 col-sm-6 wow slideInUp">
-                            <div class="feature-media">
-                            </div>
-                            <h4></h4>
-                            <div class="feature-item-content"></div>
-                        </div>
-                    </div>
-                </div>---
+                </div>--
                 </div>
-                <!--<div style="flex: 1; align-self: center; text-align: center; padding: 20px;">
-                <a class="twitter-timeline" data-lang="en" data-height="800" data-width="300" href="https://twitter.com/citgcirece">Tweets by ICSAconf</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-            </div>--
             </div>
-        </div>
-    </section>-->
-                                <section id="about" class="section-about section-padding onepage-section">
+        </section>-->
+        <section id="about" class="section-about section-padding onepage-section">
 
-                                    <div class="container">
-                                        <div class="section-title-area">
-                                            <h5 class="section-subtitle">
-                                                XIV SEMANA NACIONAL DE CIÊNCIA E TECNOLOGIA
-                                                IFBA IRECÊ
-                                            </h5>
-                                            <h4 class="section-title">21-25 de Outubro| Irecê, BA - Brasil</h4>
+            <div class="container">
+                <div class="section-title-area">
+                    <h5 class="section-subtitle">
+                        XIV SEMANA NACIONAL DE CIÊNCIA E TECNOLOGIA
+                        IFBA IRECÊ
+                    </h5>
+                    <h4 class="section-title">21-25 de Outubro| Irecê, BA - Brasil</h4>
 
-                                            </br> </br>
-                                            <div style="margin-top: 50pt" class="col-lg-12 col-sm-12  wow slideInUp">
-                                                <!--    <h5 class="section-subtitle">Evento</h5>-->
-                                                <p>
-                                                    <img class="alignnone size-medium wp-image-253" width="310"
-                                                         src="img/logos/logo_scet2.png"
-                                                         sizes="(max-width: 200px) 100vw, 200px"
-                                                         class="so-widget-image" />
-                                                </p>
-                                            </div>
-                                            <div class="col-lg-12 col-sm-12  wow slideInUp">
-                                                <h5 class="section-subtitle">Organização</h5>
-                                                <p>
-                                                    <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
-                                                    <img class="so-widget-image" width="300px" src="img/logos/ifba_irece.png" sizes="(max-width: 500px) 100vw, 500px" />
-                                                    <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                    </br> </br>
+                    <div style="margin-top: 50pt" class="col-lg-12 col-sm-12  wow slideInUp">
+                        <!--    <h5 class="section-subtitle">Evento</h5>-->
+                        <p>
+                            <img class="alignnone size-medium wp-image-253" width="310"
+                                 src="img/logos/logo_scet2.png"
+                                 sizes="(max-width: 200px) 100vw, 200px"
+                                 class="so-widget-image" />
+                        </p>
+                    </div>
+                    <div class="col-lg-12 col-sm-12  wow slideInUp">
+                        <h5 class="section-subtitle">Organização</h5>
+                        <p>
+                            <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                            <img class="so-widget-image" width="300px" src="img/logos/ifba_irece.png" sizes="(max-width: 500px) 100vw, 500px" />
+                            <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
 
-                                                    <!--Brand--><a class="brand" href="https://portal.ifba.edu.br/irece/pesquisa/coordenacao-de-pesquisa-pos-graduacao-e-inovacao">
-                                                    <img class="brand-logo-dark" src="images/logo-cppgi-completo.png" alt="" width="310" height="40" /></a>
+                            <!--Brand--><a class="brand" href="https://portal.ifba.edu.br/irece/pesquisa/coordenacao-de-pesquisa-pos-graduacao-e-inovacao">
+                                <img class="brand-logo-dark" src="images/logo-cppgi-completo.png" alt="" width="310" height="40" />
+                            </a>
 
-                                                    <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
-                                                    <!--Brand--><a class="brand" href="https://portal.ifba.edu.br/irece/Pasta-extensao/coordenacao-de-extensao-capa">
-                                                    <img class="brand-logo-dark" src="images/logo-coext-completo.png" alt="" width="310" height="40" /></a>
+                            <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                            <!--Brand--><a class="brand" href="https://portal.ifba.edu.br/irece/Pasta-extensao/coordenacao-de-extensao-capa">
+                                <img class="brand-logo-dark" src="images/logo-coext-completo.png" alt="" width="310" height="40" />
+                            </a>
 
-                                                </p>
+                        </p>
 
-                                            </div>
+                    </div>
 
-                                            <div class="col-lg-12 col-sm-12  wow slideInUp">
-                                                <h5 class="section-subtitle">Parceiros</h5>
-                                                <p>
-                                                    <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
-                                                    <!--Brand--><a class="brand" href="https://portal.ifba.edu.br/irece/pesquisa/coordenacao-de-pesquisa-pos-graduacao-e-inovacao">
-                                                    <img class="brand-logo-dark" src="img/logos/logo_uneb.png" alt="" width="150" height="40" /></a>
+                    <div class="col-lg-12 col-sm-12  wow slideInUp">
+                        <h5 class="section-subtitle">Parceiros</h5>
+                        <p>
+                            <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                            <!--Brand--><a class="brand" href="https://unebcampus16.blogspot.com/">
+                                <img class="brand-logo-dark" src="img/logos/logo_uneb.png" alt="" width="150" height="40" />
+                            </a>
 
-                                                    <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
-                                                    <!--Brand--><a class="brand" href="https://portal.ifba.edu.br/irece/Pasta-extensao/coordenacao-de-extensao-capa">
-                                                    <img class="brand-logo-dark" src="img/logos/cetep.jpg" alt="" width="150" height="40" /></a>
+                            <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                            <!--Brand--><a class="brand" href="http://escolas.educacao.ba.gov.br/node/12642">
+                                <img class="brand-logo-dark" src="img/logos/cetep.jpg" alt="" width="150" height="40" />
+                            </a>
 
-                                                   <!-- <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
-                                                    <img class="so-widget-image" width="140x"
-                                                         src="img/logos/logo_uneb.png" alt="logo"
-                                                         sizes="(max-width: 200px) 100vw, 200px" />
-                                                    <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
-                                                    <img src="img/logos/cetep.jpg"
-                                                         sizes="(max-width: 300px) 100vw, 200px"
-                                                         width="200px" class="so-widget-image" />-->
-                                                  
-
-                                                </p>
-                                            </div>
-                                            <!-- <div class="col-lg-12 col-sm-12  wow slideInUp">
-                    <h5 class="section-subtitle">Local Sponsor</h5>
-                    <p><img src="img/logos/logo.jpg"
-                            sizes="(max-width: 300px) 100vw, 200px"
-                            width="200px" class="so-widget-image"/>
-                    </p>
-                </div> -->
-                                        </div>
-                                    </div>
-                                </section>
+                            <!-- <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                             <img class="so-widget-image" width="140x"
+                                  src="img/logos/logo_uneb.png" alt="logo"
+                                  sizes="(max-width: 200px) 100vw, 200px" />
+                             <span style="width: 50pt">&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                             <img src="img/logos/cetep.jpg"
+                                  sizes="(max-width: 300px) 100vw, 200px"
+                                  width="200px" class="so-widget-image" />-->
 
 
-                                </main><!-- #main -->
-                            </div><!-- #content -->
+                        </p>
+                    </div>
+                    <!-- <div class="col-lg-12 col-sm-12  wow slideInUp">
+                        <h5 class="section-subtitle">Local Sponsor</h5>
+                        <p><img src="img/logos/logo.jpg"
+                                sizes="(max-width: 300px) 100vw, 200px"
+                                width="200px" class="so-widget-image"/>
+                        </p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+
+        </main><!-- #main -->
+    </div><!-- #content -->
 
     <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="footer-connect">
@@ -662,7 +728,7 @@
                 <div class="row">
                     <div class="col-md-8 offset-md-2 col-sm-12 offset-md-0">
                         <div class="footer-social">
-                            <h5 class="follow-heading">#SNC&T24</h5>
+                            <h5 class="follow-heading">#SNCT24</h5>
                             <div class="footer-social-icons">
                                 <a target="_blank" href="https://www.facebook.com/share/XHf8fCgnKiuXy3H3/?mibextid=LQQJ4d" title="Facebook">
                                     <i class="fa  fa-facebook"></i>
@@ -676,7 +742,7 @@
                             </div>
                         </div>
                         <nav class="footer-navigation-wrapper" role="navigation">
-                            <!--<a href="http://www.rise.com.br/riselabs/">SNC&T2024</a> -->
+                            <!--<a href="http://www.rise.com.br/riselabs/">SNCT2024</a> -->
                             <a href="https://portal.ifba.edu.br/irece">IFBA</a>
                         </nav>
                     </div>
@@ -693,7 +759,7 @@
                     <a class="fa fa-facebook" href="#"></a>
                     <a class="fa fa-instagram" href="#"></a>
                     </ul>
-                </div>   
+                </div>
                 <div class="col-lg-3 col-sm-8 wow fadeInUp">
                     <P class="footer-classic-title">contato</P>
                     <span class="d-lg-block"> <a class="d-inline-block accent-link" href="mailto:#">cppgi@ifba.edu.br</a></span><a class="d-inline-block" href="tel:#">(74) 99997-3165</a>
@@ -701,18 +767,18 @@
                 </div>
 
                 <!---- <div class="col-lg-4 wow fadeInLeft" data-wow-delay=".2s">
-                 <P class="footer-classic-title">newsletter</P>
-                 <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                     <div class="form-wrap">
-                         <label class="form-label" for="subscribe-email">Your Email Address</label>
-                         <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
-                     </div>
-                     <div class="form-button group-sm text-center text-lg-left">
-                         <button class="button button-primary button-circle" type="submit">sign up</button>
-                     </div>
-                 </form>
-                 <p>Be the first to find out about our latest news, updates, and special offers.</p>
-             </div>-->
+                    <P class="footer-classic-title">newsletter</P>
+                    <form class="rd-mailform text-left footer-classic-subscribe-form" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                        <div class="form-wrap">
+                            <label class="form-label" for="subscribe-email">Your Email Address</label>
+                            <input class="form-input" id="subscribe-email" type="email" name="email" data-constraints="@Email @Required">
+                        </div>
+                        <div class="form-button group-sm text-center text-lg-left">
+                            <button class="button button-primary button-circle" type="submit">sign up</button>
+                        </div>
+                    </form>
+                    <p>Be the first to find out about our latest news, updates, and special offers.</p>
+                </div>-->
 
                 <div class="col-lg-3 wow fadeInLeft">
                     <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-coext3.png" alt="" width="234" height="40" /></a>
@@ -741,10 +807,10 @@
     </footer><!-- #colophon -->
     </div><!-- #page -->
 
-<script type='text/javascript' src='wp-content/themes/onepress/assets/js/plugins4c564c56.js?ver=2.0.2'></script>
-<script type='text/javascript' src='wp-content/themes/onepress/assets/js/bootstrap.min4c564c56.js?ver=2.0.2'></script>
-<script type='text/javascript' src='wp-content/themes/onepress/assets/js/theme4c564c56.js?ver=2.0.2'></script>
-<script type='text/javascript' src='wp-includes/js/wp-embed.min69596959.js?ver=4.9.3'></script>
+    <script type='text/javascript' src='wp-content/themes/onepress/assets/js/plugins4c564c56.js?ver=2.0.2'></script>
+    <script type='text/javascript' src='wp-content/themes/onepress/assets/js/bootstrap.min4c564c56.js?ver=2.0.2'></script>
+    <script type='text/javascript' src='wp-content/themes/onepress/assets/js/theme4c564c56.js?ver=2.0.2'></script>
+    <script type='text/javascript' src='wp-includes/js/wp-embed.min69596959.js?ver=4.9.3'></script>
 
 </body>
 
