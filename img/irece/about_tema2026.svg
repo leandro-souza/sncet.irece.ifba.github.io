@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 640" width="720" height="640" role="img" aria-label="Ciência Delas: O Ser(tão) Semeando Saberes — pesquisadoras, agricultoras e estudantes do Território de Irecê">
+  <defs>
+    <linearGradient id="aFundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#330F3C"/><stop offset="50%" stop-color="#7B2D8E"/><stop offset="100%" stop-color="#C2185B"/>
+    </linearGradient>
+    <linearGradient id="aTerra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C86B3C"/><stop offset="100%" stop-color="#5E2A17"/>
+    </linearGradient>
+    <linearGradient id="aFolha" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#22563A"/><stop offset="100%" stop-color="#7ACB8A"/>
+    </linearGradient>
+    <radialGradient id="aSol" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0B8"/><stop offset="100%" stop-color="#F2A03D"/>
+    </radialGradient>
+    <clipPath id="aCorte"><rect width="720" height="640"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#aCorte)">
+    <rect width="720" height="640" fill="url(#aFundo)"/>
+
+    <!-- sol -->
+    <circle cx="536" cy="128" r="150" fill="#FFD772" opacity=".14"/>
+    <circle cx="536" cy="128" r="94" fill="url(#aSol)"/>
+
+    <!-- orbitas: ciencia -->
+    <g stroke="#F6ECD9" fill="none" opacity=".26" stroke-width="2">
+      <ellipse cx="360" cy="230" rx="286" ry="104" transform="rotate(-16 360 230)"/>
+      <ellipse cx="360" cy="230" rx="286" ry="104" transform="rotate(44 360 230)"/>
+      <ellipse cx="360" cy="230" rx="286" ry="104" transform="rotate(90 360 230)"/>
+    </g>
+    <g fill="#FFD772" opacity=".9">
+      <circle cx="104" cy="188" r="6"/><circle cx="642" cy="292" r="6"/><circle cx="330" cy="66" r="5"/>
+    </g>
+
+    <!-- serra -->
+    <path fill="#5B2450" opacity=".85" d="M0 330l112-54 92 38 112-62 104 50 124-68 138 62 38-16v260H0z"/>
+
+    <!-- chao do sertao -->
+    <path fill="url(#aTerra)" d="M0 404c126-32 220-34 314-20 94 14 164 16 254 4 52-8 100-8 152 2v250H0z"/>
+    <path fill="#4A2013" opacity=".4" d="M0 484c136-26 232-24 322-12 90 12 162 12 252 0 44-6 92-6 146 2v166H0z"/>
+    <g stroke="#F2A03D" stroke-width="2" opacity=".2" fill="none" stroke-linecap="round">
+      <path d="M70 520l40 26-18 22M300 546l50 18-22 14M540 512l44 26-20 20"/>
+    </g>
+
+    <!-- broto central: saberes semeados -->
+    <g transform="translate(392,470)">
+      <rect x="-7" y="-126" width="14" height="126" rx="7" fill="#22563A"/>
+      <path fill="url(#aFolha)" d="M2-92c40-28 82-30 122-12-36 8-64 24-88 46-14 12-27 2-34-34z"/>
+      <path fill="url(#aFolha)" d="M-4-126c-38-30-80-34-120-18 34 12 60 30 84 54 13 14 26 4 36-36z"/>
+      <path fill="url(#aFolha)" d="M2-54c34-20 70-20 104-4-30 6-54 18-74 36-12 10-24 0-30-32z"/>
+      <circle cx="0" cy="-142" r="15" fill="#FFD772"/>
+    </g>
+
+    <!-- mandacaru -->
+    <g fill="#22563A" transform="translate(668,352)">
+      <rect x="-13" y="0" width="26" height="132" rx="13"/>
+      <rect x="-44" y="30" width="22" height="84" rx="11"/>
+      <circle cx="0" cy="-11" r="12" fill="#F6ECD9"/>
+    </g>
+
+    <!-- figuras femininas: pesquisadora, agricultora, estudante -->
+    <g fill="#25102F">
+      <!-- pesquisadora com prancheta -->
+      <g transform="translate(120,392) scale(.6)">
+        <circle cx="0" cy="0" r="32"/>
+        <path d="M-15 24c-28 8-45 32-45 66v122h120V90c0-34-17-58-45-66z"/>
+        <path d="M-30 200l-9 108h24l15-86 15 86h24l-9-108z"/>
+        <path d="M-35-12c8-20 26-31 47-26 19 5 30 20 27 37-15-13-34-17-53-11z" fill="#7ACB8A"/>
+        <rect x="34" y="86" width="70" height="52" rx="6" fill="#F6ECD9" opacity=".9"/>
+        <g stroke="#25102F" stroke-width="4" opacity=".45"><path d="M46 102h46M46 114h46M46 126h28"/></g>
+        <path d="M56 96l-26-22 16-20 34 32z"/>
+      </g>
+      <!-- agricultora semeando -->
+      <g transform="translate(244,410) scale(.57)">
+        <circle cx="0" cy="0" r="32"/>
+        <path d="M-15 24c-28 8-45 32-45 66v122h120V90c0-34-17-58-45-66z"/>
+        <path d="M58 82l84-40 12 24-86 44z"/>
+        <path d="M-30 200l-9 108h24l15-86 15 86h24l-9-108z"/>
+        <path d="M-42-8c-4-25 13-44 38-44s42 17 40 42c-17-17-59-19-78 2z" fill="#F2A03D"/>
+      </g>
+      <!-- estudante com livro -->
+      <g transform="translate(566,398) scale(.58)">
+        <circle cx="0" cy="0" r="32"/>
+        <path d="M-15 24c-28 8-45 32-45 66v122h120V90c0-34-17-58-45-66z"/>
+        <path d="M-30 200l-9 108h24l15-86 15 86h24l-9-108z"/>
+        <path d="M-36-10c7-21 26-33 48-27 21 6 31 23 27 41-17-15-54-22-75-14z" fill="#C2185B"/>
+        <rect x="-48" y="78" width="96" height="56" rx="6" fill="#F6ECD9" opacity=".92"/>
+        <rect x="-2" y="78" width="5" height="56" fill="#25102F" opacity=".35"/>
+      </g>
+    </g>
+
+    <!-- sementes -->
+    <g fill="#FFD772">
+      <ellipse cx="62" cy="566" rx="9" ry="5" transform="rotate(-20 62 566)"/>
+      <ellipse cx="330" cy="592" rx="8" ry="4.5" transform="rotate(14 330 592)"/>
+      <ellipse cx="470" cy="556" rx="9" ry="5" transform="rotate(-8 470 556)"/>
+      <ellipse cx="660" cy="600" rx="8" ry="4.5" transform="rotate(22 660 600)"/>
+      <ellipse cx="196" cy="614" rx="8" ry="4.5" transform="rotate(-14 196 614)"/>
+    </g>
+    <g stroke="#FFD772" fill="none" stroke-width="2" opacity=".4" stroke-dasharray="7 10" stroke-linecap="round">
+      <path d="M330 388c30-22 68-36 108-40"/>
+    </g>
+  </g>
+</svg>

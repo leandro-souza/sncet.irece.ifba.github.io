@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 900" width="1920" height="900" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Horizonte do sertão de Irecê com mandacarus ao entardecer">
+  <defs>
+    <linearGradient id="pCeu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A0B3D"/><stop offset="45%" stop-color="#7B2D8E"/>
+      <stop offset="78%" stop-color="#C2185B"/><stop offset="100%" stop-color="#E4703A"/>
+    </linearGradient>
+    <linearGradient id="pChao" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8A4326"/><stop offset="100%" stop-color="#3D1A0F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="900" fill="url(#pCeu)"/>
+  <circle cx="1420" cy="600" r="180" fill="#FFD772" opacity=".55"/>
+  <circle cx="1420" cy="600" r="92" fill="#FFE49A" opacity=".9"/>
+  <path fill="#5B2450" d="M0 620l210-84 168 56 190-94 176 76 214-108 200 92 190-70 236 96 336-56v372H0z"/>
+  <path fill="url(#pChao)" d="M0 744c220-52 384-54 540-30 156 25 272 26 432 6 196-25 380-16 574 26 128 28 250 36 374 26v128H0z"/>
+  <g fill="#1F4A33">
+    <g transform="translate(300,570)">
+      <rect x="-18" y="0" width="36" height="250" rx="18"/>
+      <rect x="-66" y="60" width="30" height="152" rx="15"/>
+      <rect x="38" y="42" width="30" height="170" rx="15"/>
+      <circle cx="0" cy="-14" r="17" fill="#F6ECD9" opacity=".9"/>
+    </g>
+    <g transform="translate(1680,610) scale(.8)">
+      <rect x="-18" y="0" width="36" height="250" rx="18"/>
+      <rect x="38" y="60" width="30" height="150" rx="15"/>
+      <circle cx="0" cy="-14" r="17" fill="#F6ECD9" opacity=".9"/>
+    </g>
+    <g transform="translate(940,660) scale(.55)" opacity=".85">
+      <rect x="-18" y="0" width="36" height="250" rx="18"/>
+      <rect x="-64" y="70" width="30" height="140" rx="15"/>
+      <circle cx="0" cy="-14" r="17" fill="#F6ECD9" opacity=".9"/>
+    </g>
+  </g>
+  <g fill="#FFD772" opacity=".8">
+    <ellipse cx="700" cy="470" rx="10" ry="5.5" transform="rotate(-30 700 470)"/>
+    <ellipse cx="790" cy="424" rx="9" ry="5" transform="rotate(-44 790 424)"/>
+    <ellipse cx="880" cy="386" rx="8" ry="4.5" transform="rotate(-16 880 386)"/>
+    <ellipse cx="982" cy="342" rx="9" ry="5" transform="rotate(-52 982 342)"/>
+  </g>
+  <rect width="1920" height="900" fill="#2A0B3D" opacity=".28"/>
+</svg>

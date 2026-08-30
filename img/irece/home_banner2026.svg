@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Paisagem do sertão de Irecê ao amanhecer com mandacarus, sementes e mulheres semeando saberes">
+  <defs>
+    <linearGradient id="hCeu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A0B3D"/>
+      <stop offset="34%" stop-color="#6A1F6E"/>
+      <stop offset="62%" stop-color="#B8336A"/>
+      <stop offset="86%" stop-color="#E4703A"/>
+      <stop offset="100%" stop-color="#F5A94A"/>
+    </linearGradient>
+    <radialGradient id="hSol" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0B8"/>
+      <stop offset="55%" stop-color="#FFD772"/>
+      <stop offset="100%" stop-color="#F2A03D" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hSerra1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7A3560"/><stop offset="100%" stop-color="#5B2450"/>
+    </linearGradient>
+    <linearGradient id="hSerra2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9C4A47"/><stop offset="100%" stop-color="#6F2F33"/>
+    </linearGradient>
+    <linearGradient id="hChao" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B85E33"/><stop offset="100%" stop-color="#5E2A17"/>
+    </linearGradient>
+    <linearGradient id="hVeu" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2A0B3D" stop-opacity=".82"/>
+      <stop offset="55%" stop-color="#2A0B3D" stop-opacity=".38"/>
+      <stop offset="100%" stop-color="#2A0B3D" stop-opacity=".18"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#hCeu)"/>
+
+  <!-- estrelas -->
+  <g fill="#FFF3D0">
+    <circle cx="180" cy="96" r="2.6" opacity=".9"/><circle cx="420" cy="58" r="2" opacity=".7"/>
+    <circle cx="700" cy="130" r="2.4" opacity=".8"/><circle cx="980" cy="70" r="1.8" opacity=".6"/>
+    <circle cx="1260" cy="118" r="2.6" opacity=".85"/><circle cx="1520" cy="62" r="2" opacity=".65"/>
+    <circle cx="1760" cy="140" r="2.4" opacity=".75"/><circle cx="300" cy="210" r="1.8" opacity=".5"/>
+    <circle cx="1120" cy="196" r="2" opacity=".55"/><circle cx="1640" cy="230" r="1.8" opacity=".5"/>
+  </g>
+
+  <!-- sol nascente -->
+  <circle cx="1330" cy="690" r="330" fill="url(#hSol)" opacity=".75"/>
+  <circle cx="1330" cy="690" r="128" fill="#FFE49A" opacity=".95"/>
+
+  <!-- serras distantes -->
+  <path fill="url(#hSerra1)" d="M0 720l190-96 150 62 172-108 168 88 196-124 190 104 178-84 206 110 170-70 100 46v332H0z"/>
+  <path fill="url(#hSerra2)" d="M0 806l150-70 176 54 158-78 202 90 174-62 210 86 176-56 194 76 140-44 140 52v226H0z"/>
+
+  <!-- chao do sertao -->
+  <path fill="url(#hChao)" d="M0 900c210-58 366-62 520-38 154 25 268 30 420 8 190-27 372-22 570 22 152 34 292 46 410 34v134H0z"/>
+  <path fill="#4A2013" opacity=".5" d="M0 992c236-46 400-44 548-22 148 22 268 24 424 4 200-25 386-16 578 26 128 28 246 38 370 30v50H0z"/>
+
+  <!-- rachaduras da terra seca -->
+  <g stroke="#F2A03D" stroke-width="3" opacity=".22" fill="none" stroke-linecap="round">
+    <path d="M120 1000l70 40-30 40M420 1030l90 30-40 20M900 1010l80 34-34 36M1420 1000l86 40-38 26"/>
+  </g>
+
+  <!-- mandacarus -->
+  <g fill="#22563A">
+    <g transform="translate(250,640)">
+      <rect x="-20" y="0" width="40" height="300" rx="20"/>
+      <rect x="-74" y="66" width="34" height="180" rx="17"/>
+      <rect x="42" y="46" width="34" height="200" rx="17"/>
+      <circle cx="0" cy="-16" r="19" fill="#F6ECD9"/>
+      <circle cx="-57" cy="52" r="13" fill="#F6ECD9"/>
+    </g>
+    <g transform="translate(1640,700) scale(.82)">
+      <rect x="-20" y="0" width="40" height="300" rx="20"/>
+      <rect x="-72" y="90" width="32" height="160" rx="16"/>
+      <rect x="42" y="70" width="32" height="180" rx="16"/>
+      <circle cx="0" cy="-16" r="18" fill="#F6ECD9"/>
+    </g>
+    <g transform="translate(1010,760) scale(.6)" opacity=".9">
+      <rect x="-20" y="0" width="40" height="300" rx="20"/>
+      <rect x="46" y="80" width="32" height="170" rx="16"/>
+      <circle cx="0" cy="-16" r="18" fill="#F6ECD9"/>
+    </g>
+  </g>
+
+  <!-- silhuetas de mulheres semeando -->
+  <g fill="#25102F">
+    <g transform="translate(560,700)">
+      <circle cx="0" cy="0" r="34"/>
+      <path d="M-16 26c-30 8-48 34-48 68v128h128V94c0-34-18-60-48-68z"/>
+      <path d="M-64 120l-64 44 14 22 62-40z"/>
+      <path d="M64 116l70 30-10 24-66-28z"/>
+      <path d="M-38 222l-10 130h26l22-104 22 104h26l-10-130z"/>
+      <!-- lenco na cabeca -->
+      <path d="M-36-14c8-22 28-34 52-28 20 6 32 22 30 42-16-16-38-22-60-16z" fill="#C2185B"/>
+    </g>
+    <g transform="translate(760,742) scale(.86)">
+      <circle cx="0" cy="0" r="32"/>
+      <path d="M-14 24c-28 8-46 32-46 66v126h120V90c0-34-18-58-46-66z"/>
+      <path d="M60 108l84-56 14 22-86 60z"/>
+      <path d="M-34 216l-10 124h24l20-100 20 100h24l-10-124z"/>
+      <path d="M-34-12c8-20 26-32 48-26 20 6 30 20 28 38-14-14-36-20-56-14z" fill="#F2A03D"/>
+    </g>
+  </g>
+
+  <!-- sementes voando -->
+  <g fill="#FFD772">
+    <ellipse cx="900" cy="600" rx="11" ry="6" transform="rotate(-28 900 600)" opacity=".95"/>
+    <ellipse cx="962" cy="548" rx="9" ry="5" transform="rotate(-40 962 548)" opacity=".85"/>
+    <ellipse cx="1024" cy="512" rx="8" ry="4.5" transform="rotate(-18 1024 512)" opacity=".75"/>
+    <ellipse cx="1092" cy="470" rx="10" ry="5.5" transform="rotate(-52 1092 470)" opacity=".8"/>
+    <ellipse cx="1160" cy="440" rx="7" ry="4" transform="rotate(-12 1160 440)" opacity=".7"/>
+    <ellipse cx="1232" cy="404" rx="9" ry="5" transform="rotate(-36 1232 404)" opacity=".6"/>
+    <ellipse cx="846" cy="656" rx="8" ry="4.5" transform="rotate(-22 846 656)" opacity=".8"/>
+  </g>
+  <g stroke="#FFD772" fill="none" stroke-width="2" opacity=".35" stroke-dasharray="8 12" stroke-linecap="round">
+    <path d="M840 668C960 600 1080 500 1260 396"/>
+  </g>
+
+  <!-- veu para legibilidade do texto -->
+  <rect width="1920" height="1080" fill="url(#hVeu)"/>
+</svg>

@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="16ª SNCT Território de Irecê 2026 — Ciência Delas: O Ser(tão) Semeando Saberes">
+  <defs>
+    <linearGradient id="lgCeu" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5B1B72"/>
+      <stop offset="52%" stop-color="#A82B72"/>
+      <stop offset="100%" stop-color="#E4703A"/>
+    </linearGradient>
+    <radialGradient id="lgSol" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF0B8"/><stop offset="100%" stop-color="#F2A03D"/>
+    </radialGradient>
+    <linearGradient id="lgTerra" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C86B3C"/><stop offset="100%" stop-color="#7A3A1F"/>
+    </linearGradient>
+    <linearGradient id="lgFolha" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#2F7D4F"/><stop offset="100%" stop-color="#7ACB8A"/>
+    </linearGradient>
+    <clipPath id="lgDisco"><circle cx="256" cy="256" r="200"/></clipPath>
+  </defs>
+
+  <circle cx="256" cy="256" r="250" fill="#330F3C"/>
+  <circle cx="256" cy="256" r="230" fill="#F6ECD9"/>
+  <circle cx="256" cy="256" r="200" fill="url(#lgCeu)"/>
+
+  <g clip-path="url(#lgDisco)">
+    <!-- sol do sertao -->
+    <circle cx="256" cy="216" r="112" fill="url(#lgSol)"/>
+
+    <!-- terra rachada -->
+    <path fill="url(#lgTerra)" d="M0 344c60-26 116-30 176-16 48 11 84 12 128 2 56-13 116-9 208 22v164H0z"/>
+    <path fill="#63301A" opacity=".4" d="M0 392c74-18 130-16 190-4 50 10 88 10 138-2 52-12 114-8 184 12v114H0z"/>
+
+    <!-- mandacarus laterais -->
+    <g fill="#22563A">
+      <g transform="translate(110,238)" opacity=".95">
+        <rect x="-13" y="0" width="26" height="130" rx="13"/>
+        <rect x="-46" y="34" width="22" height="80" rx="11"/>
+        <circle cx="0" cy="-10" r="12" fill="#F6ECD9"/>
+      </g>
+      <g transform="translate(404,244)" opacity=".95">
+        <rect x="-13" y="0" width="26" height="126" rx="13"/>
+        <rect x="24" y="30" width="22" height="82" rx="11"/>
+        <circle cx="0" cy="-10" r="12" fill="#F6ECD9"/>
+      </g>
+    </g>
+
+    <!-- simbolo feminino que brota da terra: haste + circulo + cruz -->
+    <g transform="translate(256,0)">
+      <!-- folhas -->
+      <path fill="url(#lgFolha)" d="M6 300c50-34 100-36 150-12-44 8-78 28-108 54-18 16-34 2-42-42z"/>
+      <path fill="url(#lgFolha)" d="M-6 258c-48-36-98-42-148-22 42 14 76 36 104 66 18 18 34 4 44-44z"/>
+      <!-- haste -->
+      <rect x="-11" y="150" width="22" height="248" rx="11" fill="#2F7D4F"/>
+      <!-- cruz do simbolo de venus -->
+      <rect x="-52" y="330" width="104" height="22" rx="11" fill="#2F7D4F"/>
+      <!-- anel do simbolo de venus -->
+      <circle cx="0" cy="176" r="72" fill="none" stroke="#2F7D4F" stroke-width="24"/>
+      <circle cx="0" cy="176" r="72" fill="none" stroke="#7ACB8A" stroke-width="8"/>
+      <!-- semente/nucleo -->
+      <circle cx="0" cy="176" r="34" fill="#F6ECD9"/>
+      <path d="M0 146c20 10 28 30 20 50-8 18-28 26-46 18 16-4 26-14 28-30 2-16-2-28-2-38z" fill="#E4703A"/>
+      <circle cx="0" cy="176" r="34" fill="none" stroke="#330F3C" stroke-width="5"/>
+    </g>
+
+    <!-- sementes voando -->
+    <g fill="#FFD772">
+      <ellipse cx="150" cy="180" rx="12" ry="6.5" transform="rotate(-32 150 180)"/>
+      <ellipse cx="118" cy="228" rx="10" ry="5.5" transform="rotate(-14 118 228)"/>
+      <ellipse cx="368" cy="168" rx="11" ry="6" transform="rotate(28 368 168)"/>
+      <ellipse cx="398" cy="220" rx="9" ry="5" transform="rotate(10 398 220)"/>
+      <ellipse cx="146" cy="374" rx="9" ry="5" transform="rotate(-18 146 374)"/>
+      <ellipse cx="368" cy="370" rx="9" ry="5" transform="rotate(16 368 370)"/>
+    </g>
+  </g>
+
+  <!-- raios externos -->
+  <g stroke="#F2A03D" stroke-width="12" stroke-linecap="round" opacity=".95">
+    <line x1="256" y1="40" x2="256" y2="8"/>
+    <line x1="404" y1="108" x2="428" y2="84"/>
+    <line x1="108" y1="108" x2="84" y2="84"/>
+    <line x1="472" y1="256" x2="504" y2="256"/>
+    <line x1="40" y1="256" x2="8" y2="256"/>
+  </g>
+
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#330F3C" stroke-width="8"/>
+
+  <!-- faixa de identificacao -->
+  <g font-family="'Raleway','Open Sans',Arial,Helvetica,sans-serif" text-anchor="middle">
+    <rect x="82" y="374" width="348" height="94" rx="47" fill="#330F3C"/>
+    <text x="256" y="418" fill="#FFD772" font-size="48" font-weight="800" letter-spacing="0">16ª SNCT</text>
+    <text x="256" y="450" fill="#F6ECD9" font-size="22" font-weight="700" letter-spacing="4">IRECÊ · 2026</text>
+  </g>
+</svg>
